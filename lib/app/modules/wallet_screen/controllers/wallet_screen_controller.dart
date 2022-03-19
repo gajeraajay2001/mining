@@ -1,10 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class HomeController extends GetxController {
-  //TODO: Implement HomeController
-  RxInt bottomIndex = 0.obs;
-  PageController pageController = PageController();
+class WalletScreenController extends GetxController {
+  //TODO: Implement WalletScreenController
 
   final count = 0.obs;
   @override
