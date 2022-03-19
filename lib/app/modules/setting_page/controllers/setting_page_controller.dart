@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
+import 'package:mining/app/routes/app_pages.dart';
 import 'package:mining/constants/moduleConstant.dart';
 
 class SettingPageController extends GetxController {
@@ -40,6 +41,10 @@ class SettingPageController extends GetxController {
   onClickButton(int actionType) {
     switch (actionType) {
       case ActionType.ACTION_TYPE_PRIVACY:
+        Get.toNamed(Routes.PRIVACY);
+        break;
+      case ActionType.ACTION_TYPE_EARN_REFER:
+        Get.toNamed(Routes.REFER_PAGE);
         break;
       default:
         break;

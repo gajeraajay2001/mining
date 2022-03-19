@@ -15,6 +15,8 @@ class ModuleConstant {
   static const MODULE_TYPE_MERCHENT_PRODUCT = 13;
   static const MODULE_TYPE_SUBMIT_YOUR_BUISSNESST = 14;
   static const MODULE_TYPE_SETTING = 15;
+  static const MODULE_TYPE_PRIVACY = 16;
+  static const MODULE_TYPE_REFER = 18;
 }
 
 class ActionType {
@@ -70,6 +72,10 @@ String getScreenTitle(int moduleType) {
       return "Spending Bitcoin";
     case ModuleConstant.MODULE_TYPE_SETTING:
       return "Setting";
+    case ModuleConstant.MODULE_TYPE_PRIVACY:
+      return "Privacy Policy";
+    case ModuleConstant.MODULE_TYPE_REFER:
+      return "Refer & Earn";
     default:
       return "About";
   }

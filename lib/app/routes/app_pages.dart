@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+
 import 'package:mining/app/modules/bitcoin_guide_page/bindings/bitcoin_guide_page_binding.dart';
 import 'package:mining/app/modules/bitcoin_guide_page/views/bitcoin_guide_page_view.dart';
 import 'package:mining/app/modules/btc_start_view_screen/bindings/btc_start_view_screen_binding.dart';
@@ -11,6 +12,8 @@ import 'package:mining/app/modules/mining_page/bindings/mining_page_binding.dart
 import 'package:mining/app/modules/mining_page/views/mining_page_view.dart';
 import 'package:mining/app/modules/privacy/bindings/privacy_binding.dart';
 import 'package:mining/app/modules/privacy/views/privacy_view.dart';
+import 'package:mining/app/modules/refer_page/bindings/refer_page_binding.dart';
+import 'package:mining/app/modules/refer_page/views/refer_page_view.dart';
 import 'package:mining/app/modules/setting_page/bindings/setting_page_binding.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
 import 'package:mining/app/modules/wallet_screen/bindings/wallet_screen_binding.dart';
@@ -61,6 +64,11 @@ class AppPages {
       name: _Paths.PRIVACY,
       page: () => PrivacyView(),
       binding: PrivacyBinding(),
+    ),
+    GetPage(
+      name: _Paths.REFER_PAGE,
+      page: () => ReferPageView(),
+      binding: ReferPageBinding(),
     ),
   ];
 }
