@@ -10,6 +10,8 @@ abstract class Routes {
   static const BTC_START_VIEW_SCREEN = _Paths.BTC_START_VIEW_SCREEN;
   static const WALLET_SCREEN = _Paths.WALLET_SCREEN;
   static const PRIVACY = _Paths.PRIVACY;
+  static const TRANSACTION = _Paths.TRANSACTION;
+  static const WALLET = _Paths.WALLET;
 }
 
 abstract class _Paths {
@@ -21,4 +23,6 @@ abstract class _Paths {
   static const BTC_START_VIEW_SCREEN = '/btc-start-view-screen';
   static const WALLET_SCREEN = '/wallet-screen';
   static const PRIVACY = '/privacy';
+  static const TRANSACTION = '/transaction';
+  static const WALLET = '/wallet';
 }

@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+
 import 'package:mining/app/modules/bitcoin_guide_page/bindings/bitcoin_guide_page_binding.dart';
 import 'package:mining/app/modules/bitcoin_guide_page/views/bitcoin_guide_page_view.dart';
 import 'package:mining/app/modules/btc_start_view_screen/bindings/btc_start_view_screen_binding.dart';
@@ -13,6 +14,10 @@ import 'package:mining/app/modules/privacy/bindings/privacy_binding.dart';
 import 'package:mining/app/modules/privacy/views/privacy_view.dart';
 import 'package:mining/app/modules/setting_page/bindings/setting_page_binding.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
+import 'package:mining/app/modules/transaction/bindings/transaction_binding.dart';
+import 'package:mining/app/modules/transaction/views/transaction_view.dart';
+import 'package:mining/app/modules/wallet/bindings/wallet_binding.dart';
+import 'package:mining/app/modules/wallet/views/wallet_view.dart';
 import 'package:mining/app/modules/wallet_screen/bindings/wallet_screen_binding.dart';
 import 'package:mining/app/modules/wallet_screen/views/wallet_screen_view.dart';
 
@@ -61,6 +66,16 @@ class AppPages {
       name: _Paths.PRIVACY,
       page: () => PrivacyView(),
       binding: PrivacyBinding(),
+    ),
+    GetPage(
+      name: _Paths.TRANSACTION,
+      page: () => TransactionView(),
+      binding: TransactionBinding(),
+    ),
+    GetPage(
+      name: _Paths.WALLET,
+      page: () => WalletView(),
+      binding: WalletBinding(),
     ),
   ];
 }
