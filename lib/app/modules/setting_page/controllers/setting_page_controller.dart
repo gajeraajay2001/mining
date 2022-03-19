@@ -1,6 +1,6 @@
+import 'package:get/get.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
 import 'package:mining/constants/moduleConstant.dart';
-import 'package:get/get.dart';
 
 class SettingPageController extends GetxController {
   //TODO: Implement SettingPageController
@@ -37,7 +37,7 @@ class SettingPageController extends GetxController {
     return listD;
   }
 
-  obClick(int actionType) {
+  onClickButton(int actionType) {
     switch (actionType) {
       case ActionType.ACTION_TYPE_PRIVACY:
         break;

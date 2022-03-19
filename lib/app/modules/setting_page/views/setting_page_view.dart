@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/moduleConstant.dart';
 import 'package:mining/constants/sizeConstant.dart';
 import 'package:mining/utilities/widget_utils.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../controllers/setting_page_controller.dart';
 
@@ -30,7 +30,10 @@ class SettingPageView extends GetWidget<SettingPageController> {
                         child: ListView.separated(
                             itemBuilder: (context, i) {
                               return GestureDetector(
-                                onTap: () {},
+                                onTap: () {
+                                  controller
+                                      .onClickButton(controller.list![i].type!);
+                                },
                                 child: Container(
                                   child: Row(
                                     crossAxisAlignment:
@@ -54,9 +57,10 @@ class SettingPageView extends GetWidget<SettingPageController> {
                                           width: MySize.size20,
                                           decoration: BoxDecoration(
                                             image: DecorationImage(
-                                              image: AssetImage(controller
-                                                  .list![i].img
-                                                  .toString()),
+                                              image: AssetImage(
+                                                controller.list![i].img
+                                                    .toString(),
+                                              ),
                                             ),
                                           ),
                                         ),
