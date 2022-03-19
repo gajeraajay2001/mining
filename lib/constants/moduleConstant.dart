@@ -17,6 +17,8 @@ class ModuleConstant {
   static const MODULE_TYPE_SETTING = 15;
   static const MODULE_TYPE_PRIVACY = 16;
   static const MODULE_TYPE_REFER = 18;
+  static const MODULE_TYPE_TRANSACTION = 17;
+  static const MODULE_TYPE_WALLET = 20;
 }
 
 class ActionType {
@@ -76,6 +78,11 @@ String getScreenTitle(int moduleType) {
       return "Privacy Policy";
     case ModuleConstant.MODULE_TYPE_REFER:
       return "Refer & Earn";
+    case ModuleConstant.MODULE_TYPE_TRANSACTION:
+      return "History";
+    case ModuleConstant.MODULE_TYPE_WALLET:
+      return "Wallet";
+
     default:
       return "About";
   }

@@ -4,9 +4,7 @@ import 'package:mining/app/routes/app_pages.dart';
 import 'package:mining/constants/moduleConstant.dart';
 
 class SettingPageController extends GetxController {
-  //TODO: Implement SettingPageController
   List<ButtonModel>? list;
-  final count = 0.obs;
   @override
   void onInit() {
     list = getList();
@@ -46,6 +44,12 @@ class SettingPageController extends GetxController {
       case ActionType.ACTION_TYPE_EARN_REFER:
         Get.toNamed(Routes.REFER_PAGE);
         break;
+      case ActionType.ACTION_TYPE_TRANSACTION:
+        Get.toNamed(Routes.TRANSACTION);
+        break;
+      case ActionType.ACTION_TYPE_WALLET:
+        Get.toNamed(Routes.WALLET);
+        break;
       default:
         break;
     }
@@ -58,5 +62,4 @@ class SettingPageController extends GetxController {
 
   @override
   void onClose() {}
-  void increment() => count.value++;
 }

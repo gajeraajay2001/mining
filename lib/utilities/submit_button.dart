@@ -10,12 +10,15 @@ Container button({
   Color? borderColor,
   Color? textColor,
   Widget? widget,
+  double? textSize,
+  double? borderRadius,
 }) {
   return Container(
     height: MySize.getScaledSizeHeight(height),
     width: MySize.getScaledSizeWidth(width),
     decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(MySize.size6!),
+      borderRadius: BorderRadius.circular(
+          (borderRadius != null) ? borderRadius : MySize.size6!),
       border: Border.all(
           color: (borderColor == null)
               ? Colors.transparent
@@ -31,7 +34,7 @@ Container button({
             style: TextStyle(
                 color: (textColor == null) ? Colors.white : textColor,
                 fontWeight: FontWeight.bold,
-                fontSize: MySize.size14!),
+                fontSize: (textSize != null) ? textSize : MySize.size14!),
           ),
   );
 }

@@ -11,6 +11,8 @@ abstract class Routes {
   static const WALLET_SCREEN = _Paths.WALLET_SCREEN;
   static const PRIVACY = _Paths.PRIVACY;
   static const REFER_PAGE = _Paths.REFER_PAGE;
+  static const TRANSACTION = _Paths.TRANSACTION;
+  static const WALLET = _Paths.WALLET;
 }
 
 abstract class _Paths {
@@ -23,4 +25,6 @@ abstract class _Paths {
   static const WALLET_SCREEN = '/wallet-screen';
   static const PRIVACY = '/privacy';
   static const REFER_PAGE = '/refer-page';
+  static const TRANSACTION = '/transaction';
+  static const WALLET = '/wallet';
 }
