@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import 'package:mining/app/modules/bitcoin_guide_page/bindings/bitcoin_guide_page_binding.dart';
 import 'package:mining/app/modules/bitcoin_guide_page/views/bitcoin_guide_page_view.dart';
+import 'package:mining/app/modules/btc_full_mode/bindings/btc_full_mode_binding.dart';
+import 'package:mining/app/modules/btc_full_mode/views/btc_full_mode_view.dart';
 import 'package:mining/app/modules/btc_start_view_screen/bindings/btc_start_view_screen_binding.dart';
 import 'package:mining/app/modules/btc_start_view_screen/views/btc_start_view_screen_view.dart';
 import 'package:mining/app/modules/guide_detail_screen/bindings/guide_detail_screen_binding.dart';
@@ -16,6 +18,8 @@ import 'package:mining/app/modules/refer_page/bindings/refer_page_binding.dart';
 import 'package:mining/app/modules/refer_page/views/refer_page_view.dart';
 import 'package:mining/app/modules/setting_page/bindings/setting_page_binding.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
+import 'package:mining/app/modules/start_screen/bindings/start_screen_binding.dart';
+import 'package:mining/app/modules/start_screen/views/start_screen_view.dart';
 import 'package:mining/app/modules/transaction/bindings/transaction_binding.dart';
 import 'package:mining/app/modules/transaction/views/transaction_view.dart';
 import 'package:mining/app/modules/wallet/bindings/wallet_binding.dart';
@@ -26,7 +30,7 @@ import 'package:mining/app/modules/wallet_screen/views/wallet_screen_view.dart';
 part 'app_routes.dart';
 
 class AppPages {
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.START_SCREEN;
 
   static final routes = [
     GetPage(
@@ -83,6 +87,16 @@ class AppPages {
       name: _Paths.WALLET,
       page: () => WalletView(),
       binding: WalletBinding(),
+    ),
+    GetPage(
+      name: _Paths.START_SCREEN,
+      page: () => StartScreenView(),
+      binding: StartScreenBinding(),
+    ),
+    GetPage(
+      name: _Paths.BTC_FULL_MODE,
+      page: () => BtcFullModeView(),
+      binding: BtcFullModeBinding(),
     ),
   ];
 }

@@ -1,17 +1,16 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:mining/app/modules/bitcoin_guide_page/views/bitcoin_guide_page_view.dart';
 import 'package:mining/app/modules/mining_page/views/mining_page_view.dart';
 import 'package:mining/app/modules/setting_page/views/setting_page_view.dart';
 import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/sizeConstant.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetWidget<HomeController> {
   @override
   Widget build(BuildContext context) {
-    MySize().init(context);
     return Obx(() {
       return Scaffold(
         // appBar: AppBar(

@@ -82,6 +82,8 @@ String getScreenTitle(int moduleType) {
       return "History";
     case ModuleConstant.MODULE_TYPE_WALLET:
       return "Wallet";
+    case ModuleConstant.MODULE_TYPE_BTC_FULL_MODE:
+      return "Running A Full Node";
 
     default:
       return "About";

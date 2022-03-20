@@ -1,7 +1,7 @@
+import 'package:get/get.dart';
 import 'package:mining/Model/widgetModel.dart';
 import 'package:mining/app/routes/app_pages.dart';
 import 'package:mining/constants/moduleConstant.dart';
-import 'package:get/get.dart';
 
 class BitcoinGuidePageController extends GetxController {
   //TODO: Implement BitcoinGuidePageController
@@ -36,6 +36,9 @@ class BitcoinGuidePageController extends GetxController {
         break;
       case ActionType.ACTION_TYPE_BTC_START:
         Get.toNamed(Routes.BTC_START_VIEW_SCREEN);
+        break;
+      case ActionType.ACTION_TYPE_BTC_FULL_MODE:
+        Get.toNamed(Routes.BTC_FULL_MODE);
         break;
       default:
         break;

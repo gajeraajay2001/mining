@@ -1,19 +1,18 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class TransactionController extends GetxController {
-  //TODO: Implement TransactionController
-
+class StartScreenController extends GetxController {
+  //TODO: Implement StartScreenController
   final count = 0.obs;
-  RxDouble totalAmt = 0.000000.obs;
   SharedPreferences? pref;
 
   @override
   void onInit() async {
-    pref = await SharedPreferences.getInstance();
-    totalAmt.value = pref!.getDouble("amt")!;
-
     super.onInit();
+    pref = await SharedPreferences.getInstance();
+    if (pref!.getDouble("amt") == null) {
+      pref!.setDouble("amt", 0.000000);
+    }
   }
 
   @override

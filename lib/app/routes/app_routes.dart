@@ -13,6 +13,8 @@ abstract class Routes {
   static const REFER_PAGE = _Paths.REFER_PAGE;
   static const TRANSACTION = _Paths.TRANSACTION;
   static const WALLET = _Paths.WALLET;
+  static const START_SCREEN = _Paths.START_SCREEN;
+  static const BTC_FULL_MODE = _Paths.BTC_FULL_MODE;
 }
 
 abstract class _Paths {
@@ -27,4 +29,6 @@ abstract class _Paths {
   static const REFER_PAGE = '/refer-page';
   static const TRANSACTION = '/transaction';
   static const WALLET = '/wallet';
+  static const START_SCREEN = '/start-screen';
+  static const BTC_FULL_MODE = '/btc-full-mode';
 }
