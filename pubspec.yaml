@@ -10,6 +10,7 @@ dependencies:
   get: 4.6.1
   flutter_svg:
   shared_preferences: ^2.0.13
+  facebook_audience_network:
   share_plus: ^4.0.1
   url_launcher:
   flutter: 

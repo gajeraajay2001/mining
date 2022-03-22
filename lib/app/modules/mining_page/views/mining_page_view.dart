@@ -1,3 +1,4 @@
+import 'package:facebook_audience_network/ad/ad_banner.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -45,6 +46,42 @@ class MiningPageView extends GetWidget<MiningPageController> {
                               crossAxisAlignment: CrossAxisAlignment.center,
                               mainAxisAlignment: MainAxisAlignment.start,
                               children: [
+                                // Container(
+                                //   alignment: Alignment(0.5, 1),
+                                //   child: FacebookBannerAd(
+                                //     placementId: Platform.isAndroid
+                                //         ? "412479446406458_568694384118296"
+                                //         : "YOUR_IOS_PLACEMENT_ID",
+                                //     bannerSize: BannerSize.STANDARD,
+                                //     listener: (result, value) {
+                                //       switch (result) {
+                                //         case BannerAdResult.ERROR:
+                                //           print("Error: $value");
+                                //           break;
+                                //         case BannerAdResult.LOADED:
+                                //           print("Loaded: $value");
+                                //           break;
+                                //         case BannerAdResult.CLICKED:
+                                //           print("Clicked: $value");
+                                //           break;
+                                //         case BannerAdResult.LOGGING_IMPRESSION:
+                                //           print("Logging Impression: $value");
+                                //           break;
+                                //       }
+                                //     },
+                                //   ),
+                                // ),
+                                Container(
+                                  height: MySize.size100,
+                                  width: double.infinity,
+                                  child: FacebookBannerAd(
+                                      bannerSize: BannerSize.STANDARD,
+                                      keepAlive: true,
+                                      placementId:
+                                          "IMG_16_9_LINK#YOUR_PLACEMENT_ID"
+                                      // "IMG_16_9_LINK#YOUR_PLACEMENT_ID",
+                                      ),
+                                ),
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,

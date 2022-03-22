@@ -24,7 +24,126 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
               Expanded(
                 child: Container(
                   child: SingleChildScrollView(
-                    child: Column(),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        Text(
+                          "How to use BTC",
+                          style: TextStyle(
+                              color: appTheme.primaryTheme,
+                              fontWeight: FontWeight.w600,
+                              fontSize: MySize.size18),
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                          no: "1",
+                          buttonName: "Read More",
+                          isButton: true,
+                          actionType: ActionType.ACTION_TYPE_INFORM_YOUR_SELF,
+                          title: "Inform yourself",
+                          data:
+                              "BTC is different than what you know and use every day. Before you start using BTC, there are a few things that you need to know in order to use it securely and avoid common pitfalls.",
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                          no: "2",
+                          buttonName: "Choose your Wallet",
+                          isButton: true,
+                          actionType: ActionType.ACTION_TYPE_CHOOSE_YOUR_WALLET,
+                          title: "Choose your wallet",
+                          data:
+                              "Free BTC wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes.",
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                            no: "3",
+                            buttonName: "Get BTC",
+                            isButton: false,
+                            title: "Choose your wallet",
+                            data:
+                                "You can get BTC by accepting it as a payment for goods and services. There are also several ways you can buy BTC."),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                            no: "4",
+                            buttonName: "Spend BTC",
+                            isButton: true,
+                            actionType: ActionType.ACTION_TYPE_MERCHENT_PRODUCT,
+                            title: "Find Merchants and Product",
+                            data:
+                                "There are a growing number of services and merchants accepting BTC all over the world. Use BTC to pay them and rate your experience to help them gain more visibility."),
+                        SizedBox(
+                          height: MySize.size20,
+                        ),
+                        Text(
+                          "How to accept BTC",
+                          style: TextStyle(
+                              color: appTheme.primaryTheme,
+                              fontWeight: FontWeight.w600,
+                              fontSize: MySize.size18),
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                          no: "1",
+                          buttonName: "Read More",
+                          actionType: ActionType.ACTION_TYPE_INFORM_YOUR_SELF,
+                          isButton: true,
+                          data:
+                              "BTC does not require merchants to change their habits. However, BTC is different than what you know and use every day. Before you start using BTC, there are a few things that you need to know in order to use it securely and avoid common pitfalls.",
+                          title: "Inform yourself",
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                          no: "2",
+                          buttonName: "Find merchant services",
+                          isButton: true,
+                          actionType: ActionType.ACTION_TYPE_MERCHENT_SERVICE,
+                          data:
+                              "You can process payments and invoices by yourself or you can use merchant services and deposit money in your local currency or BTCs. Most point of sales businesses use a tablet or a mobile phone to let customers pay with their mobile phones.",
+                          title: "Processing payments",
+                        ),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                            no: "3",
+                            buttonName: "Read More",
+                            isButton: true,
+                            actionType: ActionType.ACTION_TYPE_ACCOUNT_TAXES,
+                            title: "Accounting and taxes",
+                            data:
+                                "Merchants often deposit and display prices in their local currency. In other cases, BTC works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."),
+                        SizedBox(
+                          height: MySize.size15,
+                        ),
+                        getWidget(
+                            no: "4",
+                            buttonName: "Submit Your business",
+                            isButton: true,
+                            actionType:
+                                ActionType.ACTION_TYPE_SUBMIT_YOUR_BUISSNESS,
+                            title: "Gaining visibility",
+                            data:
+                                "There is a growing number of users searching for ways to spend their BTCs. You can submit your business in online directories to help them easily find you. You can also display the BTC logo on your website or your brick and mortar business."),
+                        SizedBox(
+                          height: MySize.size20,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -26,6 +27,7 @@ class HomeController extends GetxController {
   SharedPreferences? pref;
   @override
   void onInit() async {
+    FacebookAudienceNetwork.init();
     super.onInit();
     pref = await SharedPreferences.getInstance();
     totalAmt.value = pref!.getDouble("amt")!;
