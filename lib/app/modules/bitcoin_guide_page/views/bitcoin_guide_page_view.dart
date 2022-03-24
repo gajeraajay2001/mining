@@ -1,7 +1,8 @@
-import 'package:mining/constants/color_constant.dart';
-import 'package:mining/constants/sizeConstant.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:mining/constants/color_constant.dart';
+import 'package:mining/constants/sizeConstant.dart';
+import 'package:mining/utilities/widget_utils.dart';
 
 import '../controllers/bitcoin_guide_page_controller.dart';
 
@@ -114,9 +115,15 @@ class BitcoinGuidePageView extends GetWidget<BitcoinGuidePageController> {
                               );
                             },
                             separatorBuilder: (context, i) {
-                              return SizedBox(
-                                height: MySize.size20,
-                              );
+                              return (i % 3 == 0)
+                                  ? Padding(
+                                      padding:
+                                          EdgeInsets.only(top: MySize.size20!),
+                                      child: getBannerAd(),
+                                    )
+                                  : SizedBox(
+                                      height: MySize.size20,
+                                    );
                             },
                             itemCount: controller.allData.length),
                       ),

@@ -27,7 +27,9 @@ class HomeController extends GetxController {
   SharedPreferences? pref;
   @override
   void onInit() async {
-    FacebookAudienceNetwork.init();
+    FacebookAudienceNetwork.init(
+      testingId: "37b1da9d-b48c-4103-a393-2e095e734bd6",
+    );
     super.onInit();
     pref = await SharedPreferences.getInstance();
     totalAmt.value = pref!.getDouble("amt")!;

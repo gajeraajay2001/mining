@@ -48,6 +48,7 @@ class TransactionView extends GetWidget<TransactionController> {
                             ),
                           ),
                           SizedBox(height: MySize.size10),
+                          getBannerAd(),
                           button(
                               title: "Withdraw",
                               borderRadius: MySize.size20,

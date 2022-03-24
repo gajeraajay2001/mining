@@ -46,6 +46,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                             "Running a BTC full node comes with certain costs and can expose you to certain risks. This section will explain those costs and risks so you can decide whether you're able to help the network."),
                         SizedBox(
@@ -96,6 +97,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size20,
                         ),
+                        getBannerAd(),
                         title("Possible Problems"),
                         SizedBox(
                           height: MySize.size10,
@@ -113,6 +115,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                           "Some Internet plans will charge an additional amount for any excess upload bandwidth used that isn't included in the plan. Worse, some providers may terminate your connection without warning because of overuse. We advise that you check whether your Internet connection is subjected to such limitations and monitor your bandwidth use so that you can stop BTC Core before you reach your upload limit.",
                         ),
@@ -133,6 +136,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                           "BTC Core powers the BTC peer-to-peer network, so people who want to disrupt the network may attack BTC Core users in ways that will affect other things you do with your computer, such as an attack that limits your available download bandwidth.",
                         ),
@@ -163,6 +167,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer(
                             "01EA 5486 DE18 A882 D4C2 6845 9008 019E 36C2 E964"),
                         SizedBox(
@@ -198,6 +203,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         getContainer(
                           "tarixzf BTC-0.21.0-x86_64-linux-qnu.tar.gz",
                         ),
+                        getBannerAd(),
                         SizedBox(
                           height: MySize.size10,
                         ),
@@ -218,6 +224,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer(
                           "su -c 'install -m 0755-oroot-groot-t/usr/local/bin\nBTC-0.21.0/bin/*",
                         ),
@@ -236,6 +243,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         textData(
                           "In order to use BTC Core GUI, you will need several libraries installed. All of them should be available in all major recently-released Linux distributions, but they may not be installed on your computer yet. To determine whether you're missing any libraries, open a terminal (if you haven't already) and run the command /usr/local/bin/BTC-qt to start BTC Core GUI.10 If all the required libraries are installed, BTC Core will start. If a required library is missing, an error message similar to the following message will be displayed:",
                         ),
+                        getBannerAd(),
                         SizedBox(
                           height: MySize.size10,
                         ),
@@ -262,6 +270,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                           "If BTC Core GUI does not automatically start, you may need to add it to an .xinit or .xsession file as described here. 10 You have now completed installing BTC Core. If you have any questions, please ask in one of BTC's many communities, such as BTC StackExchange, BTCTalk technical support, or the #BTC IRC chatroom on Freenode.10 To support the BTC network, you also need to allow incoming connections. Please read the Network Configuration section for details.",
                         ),
@@ -286,6 +295,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer(
                             "error (code -28 message Verifying blocks...)"),
                         SizedBox(
@@ -308,6 +318,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer("crontab-e"),
                         SizedBox(
                           height: MySize.size10,
@@ -349,6 +360,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                             "Earlier releases were signed by Wladimir J. van der Laan's regular key. That key's fingerprint is:"),
                         SizedBox(
@@ -385,6 +397,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size20,
                         ),
+                        getBannerAd(),
                         textData(
                           "Press the Windows key (Win) and start typing 'BTC'. When the BTC Core icon appears (as shown below), click on it.",
                         ),
@@ -400,6 +413,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         textData(
                           "Your firewall may block BTC Core from making outbound connections. It's safe to allow BTC Core to use all networks. (Note: you will still need to configure inbound connections as described later in the Network Configuration section.)",
                         ),
+                        getBannerAd(),
                         SizedBox(
                           height: MySize.size10,
                         ),
@@ -409,6 +423,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         textData(
                           "After download is complete, you may use BTC Core as your wallet or you can just let it run to help support the BTC network. 10 Optional: Start Your Node At Login10 Starting your node automatically each time you login to your computer makes it easy for you to contribute to the network. The easiest way to do this is to tell BTC Core GUI to start at login. 10 While running BTC Core GUI, open the Settings menu and choose Options. On the Main tab, click Start BTC on system login. Click the Ok button to save the new settings.",
                         ),
@@ -439,6 +454,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer("C:Program FilesBTCdaemon BTCd"),
                         SizedBox(
                           height: MySize.size20,
@@ -470,6 +486,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        getBannerAd(),
                         getContainer("C Program Filles BTCoa=tionETC-ollistop"),
                         SizedBox(
                           height: MySize.size10,

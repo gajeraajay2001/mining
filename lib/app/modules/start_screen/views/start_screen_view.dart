@@ -4,6 +4,7 @@ import 'package:mining/app/routes/app_pages.dart';
 import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/sizeConstant.dart';
 import 'package:mining/utilities/submit_button.dart';
+import 'package:mining/utilities/widget_utils.dart';
 
 import '../controllers/start_screen_controller.dart';
 
@@ -33,11 +34,12 @@ class StartScreenView extends GetWidget<StartScreenController> {
                   ),
                 ),
               ),
+              getBannerAd(),
               Expanded(
                 child: Container(
                   child: Center(
                     child: InkWell(
-                      onTap: (){
+                      onTap: () {
                         Get.toNamed(Routes.HOME);
                       },
                       child: button(

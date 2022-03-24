@@ -81,9 +81,15 @@ class SettingPageView extends GetWidget<SettingPageController> {
                               );
                             },
                             separatorBuilder: (context, i) {
-                              return SizedBox(
-                                height: MySize.size15,
-                              );
+                              return (i % 2 == 0)
+                                  ? Padding(
+                                      padding:
+                                          EdgeInsets.only(top: MySize.size15!),
+                                      child: getBannerAd(),
+                                    )
+                                  : SizedBox(
+                                      height: MySize.size15,
+                                    );
                             },
                             itemCount: controller.list!.length),
                       ),

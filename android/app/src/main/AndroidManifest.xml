@@ -26,7 +26,7 @@
         </intent>
     </queries>
    <application
-        android:label="mining"
+        android:label="BTC Mining"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -49,6 +49,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                           data:
                               "BTC is different than what you know and use every day. Before you start using BTC, there are a few things that you need to know in order to use it securely and avoid common pitfalls.",
                         ),
+                        getBannerAd(),
                         SizedBox(
                           height: MySize.size15,
                         ),
@@ -74,6 +75,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                         SizedBox(
                           height: MySize.size15,
                         ),
+                        getBannerAd(),
                         getWidget(
                             no: "4",
                             buttonName: "Spend BTC",
@@ -104,6 +106,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                               "BTC does not require merchants to change their habits. However, BTC is different than what you know and use every day. Before you start using BTC, there are a few things that you need to know in order to use it securely and avoid common pitfalls.",
                           title: "Inform yourself",
                         ),
+                        getBannerAd(),
                         SizedBox(
                           height: MySize.size15,
                         ),
@@ -142,6 +145,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                         SizedBox(
                           height: MySize.size20,
                         ),
+                        getBannerAd(),
                       ],
                     ),
                   ),

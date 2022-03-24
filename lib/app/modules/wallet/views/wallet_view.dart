@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:get/get.dart';
 import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/moduleConstant.dart';
@@ -28,6 +27,7 @@ class WalletView extends GetView<WalletController> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SizedBox(height: MySize.size20),
+                        getBannerAd(),
                         Container(
                           padding:
                               EdgeInsets.symmetric(horizontal: MySize.size25!),
@@ -87,6 +87,7 @@ class WalletView extends GetView<WalletController> {
                           ),
                         ),
                         SizedBox(height: MySize.size10),
+                        getBannerAd(),
                         button(
                             title: "Accept",
                             borderRadius: MySize.size20,

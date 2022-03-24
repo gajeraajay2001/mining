@@ -21,7 +21,7 @@ class ReferPageView extends GetView<ReferPageController> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              getAppBar(ModuleConstant.MODULE_TYPE_PRIVACY),
+              getAppBar(ModuleConstant.MODULE_TYPE_REFER),
               Expanded(
                 child: Container(
                   padding: EdgeInsets.symmetric(
@@ -46,6 +46,7 @@ class ReferPageView extends GetView<ReferPageController> {
                             color: appTheme.whiteColor,
                             fontSize: MySize.size16),
                       ),
+                      getBannerAd(),
                       SizedBox(
                         height: MySize.size15,
                       ),

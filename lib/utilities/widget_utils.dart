@@ -1,3 +1,4 @@
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mining/constants/color_constant.dart';
@@ -45,6 +46,18 @@ Container getAppBar(int moduleType, {bool isBack = true}) {
           ),
         ),
       ],
+    ),
+  );
+}
+
+Widget getBannerAd() {
+  return Container(
+    width: double.infinity,
+    child: FacebookBannerAd(
+      bannerSize: BannerSize.STANDARD,
+      keepAlive: true,
+      placementId: "412479446406458_568694384118296",
+      // "IMG_16_9_LINK#YOUR_PLACEMENT_ID",
     ),
   );
 }

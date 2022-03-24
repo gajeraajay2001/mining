@@ -1,9 +1,10 @@
-import 'package:facebook_audience_network/ad/ad_banner.dart';
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/sizeConstant.dart';
+import 'package:mining/utilities/widget_utils.dart';
 
 import '../controllers/mining_page_controller.dart';
 
@@ -72,7 +73,6 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                 //   ),
                                 // ),
                                 Container(
-                                  height: MySize.size100,
                                   width: double.infinity,
                                   child: FacebookBannerAd(
                                       bannerSize: BannerSize.STANDARD,
@@ -82,6 +82,30 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                       // "IMG_16_9_LINK#YOUR_PLACEMENT_ID",
                                       ),
                                 ),
+                                // FacebookNativeAd(
+                                //   placementId:
+                                //       // "412479446406458_568694384118296",
+                                //       "IMG_16_9_LINK#YOUR_PLACEMENT_ID",
+                                //   adType: NativeAdType.NATIVE_BANNER_AD,
+                                //   width: double.infinity,
+                                //   height: 300,
+                                //   backgroundColor: Colors.blue,
+                                //   titleColor: Colors.white,
+                                //   descriptionColor: Colors.white,
+                                //   buttonColor: Colors.deepPurple,
+                                //   buttonTitleColor: Colors.white,
+                                //   buttonBorderColor: Colors.white,
+                                //   keepAlive:
+                                //       true, //set true if you do not want adview to refresh on widget rebuild
+                                //   keepExpandedWhileLoading:
+                                //       false, // set false if you want to collapse the native ad view when the ad is loading
+                                //   expandAnimationDuraion:
+                                //       300, //in milliseconds. Expands the adview with animation when ad is loaded
+                                //   listener: (result, value) {
+                                //     print("Native Ad: $result --> $value");
+                                //   },
+                                // ),
+
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -516,6 +540,7 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                           ),
                                         ),
                                       ),
+                                getBannerAd(),
                               ],
                             ),
                           ),
