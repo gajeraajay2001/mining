@@ -26,7 +26,8 @@ class StartScreenView extends GetWidget<StartScreenController> {
                 color: appTheme.primaryTheme.withOpacity(0.1),
                 child: Center(
                   child: Text(
-                    "BTC mining",
+                    // "BTC mining",
+                    "Mining",
                     style: TextStyle(
                         color: appTheme.whiteColor,
                         fontWeight: FontWeight.w500,

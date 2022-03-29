@@ -29,7 +29,8 @@ class MiningPageView extends GetWidget<MiningPageController> {
                         color: appTheme.primaryTheme.withOpacity(0.1),
                         child: Center(
                           child: Text(
-                            "Boost Mining",
+                            // "Boost Mining",
+                            "Boost",
                             style: TextStyle(
                                 color: appTheme.whiteColor,
                                 fontWeight: FontWeight.w500,
@@ -105,33 +106,33 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                 //     print("Native Ad: $result --> $value");
                                 //   },
                                 // ),
-
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Image(
-                                      image: AssetImage("assets/wallet.png"),
-                                      height: MySize.size40,
-                                      width: MySize.getScaledSizeWidth(40),
-                                      color: Colors.white,
-                                    ),
-                                    SizedBox(
-                                      width: MySize.getScaledSizeWidth(10),
-                                    ),
-                                    Text(
-                                      controller.homeController.value.totalAmt
-                                              .toStringAsFixed(6) +
-                                          " BTC",
-                                      style: TextStyle(
-                                          fontSize: MySize.size22,
-                                          fontWeight: FontWeight.w500),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(
-                                  height: MySize.size40,
-                                ),
+                                //
+                                // Row(
+                                //   mainAxisAlignment: MainAxisAlignment.center,
+                                //   crossAxisAlignment: CrossAxisAlignment.center,
+                                //   children: [
+                                //     Image(
+                                //       image: AssetImage("assets/wallet.png"),
+                                //       height: MySize.size40,
+                                //       width: MySize.getScaledSizeWidth(40),
+                                //       color: Colors.white,
+                                //     ),
+                                //     SizedBox(
+                                //       width: MySize.getScaledSizeWidth(10),
+                                //     ),
+                                //     Text(
+                                //       controller.homeController.value.totalAmt
+                                //               .toStringAsFixed(6) +
+                                //           " BTC",
+                                //       style: TextStyle(
+                                //           fontSize: MySize.size22,
+                                //           fontWeight: FontWeight.w500),
+                                //     )
+                                //   ],
+                                // ),
+                                // SizedBox(
+                                //   height: MySize.size40,
+                                // ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
