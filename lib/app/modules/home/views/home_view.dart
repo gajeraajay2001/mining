@@ -72,8 +72,10 @@ class HomeView extends GetWidget<HomeController> {
           controller: controller.pageController,
           children: [
             MiningPageView(),
-            BitcoinGuidePageView(),
-            SettingPageView(),
+            SizedBox(),
+            SizedBox(),
+            // BitcoinGuidePageView(),
+            // SettingPageView(),
 
             // Container(),
           ],
