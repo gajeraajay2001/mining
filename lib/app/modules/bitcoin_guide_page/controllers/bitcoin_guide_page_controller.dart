@@ -3,6 +3,8 @@ import 'package:mining/Model/widgetModel.dart';
 import 'package:mining/app/routes/app_pages.dart';
 import 'package:mining/constants/moduleConstant.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class BitcoinGuidePageController extends GetxController {
   //TODO: Implement BitcoinGuidePageController
   List<BonusGuide> allData = getListofBonus();
@@ -10,6 +12,7 @@ class BitcoinGuidePageController extends GetxController {
   @override
   void onInit() {
     print(allData);
+    interstialAd();
     super.onInit();
   }
 

@@ -37,6 +37,7 @@ class PrivacyView extends GetView<PrivacyController> {
                               fontSize: MySize.size14,
                               height: 1.3),
                         ),
+                        facebookNativeAd(),
                       ],
                     ),
                   ),

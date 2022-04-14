@@ -30,6 +30,13 @@ class HomeController extends GetxController {
     FacebookAudienceNetwork.init(
       testingId: "37b1da9d-b48c-4103-a393-2e095e734bd6",
     );
+    FacebookInterstitialAd.loadInterstitialAd(
+      placementId: "IMG_16_9_LINK#YOUR_PLACEMENT_ID",
+      listener: (result, value) {
+        if (result == InterstitialAdResult.LOADED)
+          FacebookInterstitialAd.showInterstitialAd(delay: 1000);
+      },
+    );
     super.onInit();
     pref = await SharedPreferences.getInstance();
     totalAmt.value = pref!.getDouble("amt")!;

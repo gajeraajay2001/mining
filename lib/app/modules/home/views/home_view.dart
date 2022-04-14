@@ -11,6 +11,7 @@ import '../controllers/home_controller.dart';
 class HomeView extends GetWidget<HomeController> {
   @override
   Widget build(BuildContext context) {
+    MySize().init(context);
     return Obx(() {
       return Scaffold(
         // appBar: AppBar(

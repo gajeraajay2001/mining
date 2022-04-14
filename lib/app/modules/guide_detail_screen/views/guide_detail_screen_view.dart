@@ -92,7 +92,9 @@ class GuideDetailScreenView extends GetWidget<GuideDetailScreenController> {
                         return (i % 3 == 0)
                             ? Padding(
                                 padding: EdgeInsets.only(top: MySize.size20!),
-                                child: getBannerAd(),
+                                child: (i % 2 == 0)
+                                    ? facebookNativeAd()
+                                    : getBannerAd(),
                               )
                             : SizedBox(
                                 height: MySize.size20,

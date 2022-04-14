@@ -1,5 +1,8 @@
+import 'package:facebook_audience_network/ad/ad_interstitial.dart';
 import 'package:get/get.dart';
 import 'package:mining/app/modules/home/controllers/home_controller.dart';
+
+import '../../../../utilities/widget_utils.dart';
 
 class MiningPageController extends GetxController {
   //TODO: Implement MiningPageController
@@ -8,6 +11,7 @@ class MiningPageController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    interstialAd();
   }
 
   @override

@@ -132,6 +132,7 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                 SizedBox(
                                   height: MySize.size40,
                                 ),
+
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
@@ -541,6 +542,7 @@ class MiningPageView extends GetWidget<MiningPageController> {
                                         ),
                                       ),
                                 getBannerAd(),
+                                facebookNativeAd(),
                               ],
                             ),
                           ),

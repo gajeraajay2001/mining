@@ -50,7 +50,8 @@ class StartScreenView extends GetWidget<StartScreenController> {
                     ),
                   ),
                 ),
-              )
+              ),
+              nativeBannerAd(),
             ],
           ),
         ),

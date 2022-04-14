@@ -1,9 +1,13 @@
+import 'package:facebook_audience_network/facebook_audience_network.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'app/routes/app_pages.dart';
 
 void main() {
+  FacebookAudienceNetwork.init(
+      iOSAdvertiserTrackingEnabled: true //default false
+      );
   runApp(
     GetMaterialApp(
       debugShowCheckedModeBanner: false,

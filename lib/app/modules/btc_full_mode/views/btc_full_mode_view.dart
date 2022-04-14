@@ -38,6 +38,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size30,
                         ),
+                        nativeBannerAd(),
                         megaTitle("Setup a Full Node"),
                         SizedBox(
                           height: MySize.size30,
@@ -56,6 +57,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        facebookNativeAd(),
                         textData(
                           "Miners, businesses, and privacy-conscious users rely on particular behavior from the full nodes they use, so they will often run their own full nodes and take special safety precautions. This document does not cover those precautions -it only describes running a full node to help support the BTC network in general. Please seek out assistance in the community if you need help setting up your full node correctly to handle high-value and privacy-sensitive tasks. Do your own diligence to ensure who you get help from is ethical, reputable and qualified to assist you.",
                         ),
@@ -66,6 +68,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        nativeBannerAd(),
                         textData(
                             "It's possible and safe to run a full node to support the network and use its wallet to store your BTCs, but you must take the same precautions you would when using any BTC wallet. Please see the securing your wallet page for more information."),
                         SizedBox(
@@ -75,6 +78,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        facebookNativeAd(),
                         textData(
                           "BTC Core full nodes have certain requirements. If you try running a node on weak hardware, it may work-but you'll likely spend more time dealing with issues. If you can meet the following requirements, you'll have an easy-to-use node.",
                         ),
@@ -87,6 +91,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size20,
                         ),
+                        facebookNativeAd(),
                         title("Note:"),
                         SizedBox(
                           height: MySize.size10,
@@ -108,6 +113,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         ),
                         textData(
                             "BTC use is prohibited or restricted in some areas."),
+                        facebookNativeAd(),
                         SizedBox(
                           height: MySize.size20,
                         ),
@@ -123,6 +129,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                           height: MySize.size20,
                         ),
                         title("● Anti-virus:"),
+                        nativeBannerAd(),
                         SizedBox(
                           height: MySize.size10,
                         ),
@@ -149,6 +156,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        nativeBannerAd(),
                         textData(
                           "Initial block download refers to the process where nodes synchronize themselves to the network by downloading blocks that are new to them. This will happen when a node is far behind the tip of the best block chain. In the process of IBD, a node does not accept incoming transactions nor request mempool transactions.10 If you are trying to set up a new node following the instructions below, you will go through the IBD process at the first run, and it may take a considerable amount of time since a new node has to download the entire block chain (which is roughly 340 gigabytes now). During the download, there could be a high usage for the network and CPU (since the node has to verify the blocks downloaded), and the client will take up an increasing amount of storage space (reduce storage provides more details on reducing storage).10 Before the node finishes IBD, you will not be able to see a new transaction related to your account until the client has caught up to the block containing that transaction. So your wallet may not count new payments/spendings into the balance. If you are using BTC Core GUI, you can monitor the progress of IBD in the status bar (left bottom corner).",
                         ),
@@ -161,6 +169,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        facebookNativeAd(),
                         textData(
                           "The following instructions describe installing BTC Core using tools available in most mainstream Linux distributions. We assume you use a Bourne-like shell such as bash.10 Using any computer, go to the BTC Core download page and verify you have made a secure connection to the server. In the 'Linux (tgz)' section of the Download page, choose the appropriate file for your Linux install (either 32-bit or 64-bit) and download the file. If necessary, move the file to the computer you want to use to run BTC Core. 10 Optional: Verify the release signatures 10 If you know how to use PGP, you should also click the Verify Release Signatures link on the download page to download a signed list of SHA256 file hashes. The 0.11 and later releases are signed by Wladimir J. van der Laan's releases key with the fingerprint:",
                         ),
@@ -213,6 +222,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        facebookNativeAd(),
                         getContainer(
                           "sudo install im 0755-oroot-groot-1/usr/local/bin/BTC-0.21.0/bin/",
                         ),
@@ -281,6 +291,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        nativeBannerAd(),
                         textData(
                             "If you're logged in as an administrative user with sudo access, you may log out. The steps in this section should be performed as the user you want to run BTC Core. (This can be a locked account used only by BTC Core.) If you changed users in a graphical interface, start a terminal.10 Type the following command:"),
                         SizedBox(
@@ -376,6 +387,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         SizedBox(
                           height: MySize.size10,
                         ),
+                        facebookNativeAd(),
                         getContainer(
                             "2664 6D99 CBAE C9B8 1982 EF60 29D9 EE6B 1FC7 30C1"),
                         SizedBox(
@@ -443,6 +455,7 @@ class BtcFullModeView extends GetView<BtcFullModeController> {
                         textData(
                           "To start BTC Core daemon, first open a command window: press the Windows key (Win) and type 'cmd'. Choose the option labeled 'Command Prompt'.",
                         ),
+                        facebookNativeAd(),
                         SizedBox(
                           height: MySize.size10,
                         ),

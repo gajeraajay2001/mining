@@ -61,3 +61,62 @@ Widget getBannerAd() {
     ),
   );
 }
+
+Widget nativeBannerAd() {
+  return Container(
+    margin: EdgeInsets.symmetric(vertical: MySize.getScaledSizeHeight(10)),
+    width: double.infinity,
+    child: FacebookNativeAd(
+      placementId: "412479446406458_580568482930886",
+      adType: NativeAdType.NATIVE_BANNER_AD,
+      bannerAdSize: NativeBannerAdSize.HEIGHT_100,
+      width: double.infinity,
+      backgroundColor: Colors.blue,
+      titleColor: Colors.white,
+      descriptionColor: Colors.white,
+      buttonColor: Colors.deepPurple,
+      buttonTitleColor: Colors.white,
+      buttonBorderColor: Colors.white,
+      listener: (result, value) {
+        print("Native Ad: $result --> $value");
+      },
+    ),
+  );
+}
+
+Widget facebookNativeAd() {
+  return Padding(
+    padding: EdgeInsets.symmetric(vertical: MySize.getScaledSizeHeight(10)),
+    child: FacebookNativeAd(
+      placementId: "412479446406458_580567736264294",
+      adType: NativeAdType.NATIVE_AD,
+      width: double.infinity,
+      //height: 300,
+      backgroundColor: Colors.blue,
+      titleColor: Colors.white,
+      descriptionColor: Colors.white,
+      buttonColor: Colors.deepPurple,
+      buttonTitleColor: Colors.white,
+      buttonBorderColor: Colors.white,
+      keepAlive:
+          true, //set true if you do not want adview to refresh on widget rebuild
+      keepExpandedWhileLoading:
+          false, // set false if you want to collapse the native ad view when the ad is loading
+      expandAnimationDuraion:
+          300, //in milliseconds. Expands the adview with animation when ad is loaded
+      listener: (result, value) {
+        print("Native Ad: $result --> $value");
+      },
+    ),
+  );
+}
+
+interstialAd() {
+  return FacebookInterstitialAd.loadInterstitialAd(
+    placementId: "412479446406458_580565886264479",
+    listener: (result, value) {
+      if (result == InterstitialAdResult.LOADED)
+        FacebookInterstitialAd.showInterstitialAd(delay: 1000);
+    },
+  );
+}

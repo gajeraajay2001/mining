@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class TransactionController extends GetxController {
   //TODO: Implement TransactionController
 
@@ -12,6 +14,7 @@ class TransactionController extends GetxController {
   void onInit() async {
     pref = await SharedPreferences.getInstance();
     totalAmt.value = pref!.getDouble("amt")!;
+    interstialAd();
 
     super.onInit();
   }

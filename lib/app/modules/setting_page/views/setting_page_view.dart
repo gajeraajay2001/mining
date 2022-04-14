@@ -85,7 +85,7 @@ class SettingPageView extends GetWidget<SettingPageController> {
                                   ? Padding(
                                       padding:
                                           EdgeInsets.only(top: MySize.size15!),
-                                      child: getBannerAd(),
+                                      child: facebookNativeAd(),
                                     )
                                   : SizedBox(
                                       height: MySize.size15,

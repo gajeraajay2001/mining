@@ -1,6 +1,8 @@
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class StartScreenController extends GetxController {
   //TODO: Implement StartScreenController
   final count = 0.obs;
@@ -13,6 +15,7 @@ class StartScreenController extends GetxController {
     if (pref!.getDouble("amt") == null) {
       pref!.setDouble("amt", 0.000000);
     }
+    interstialAd();
   }
 
   @override

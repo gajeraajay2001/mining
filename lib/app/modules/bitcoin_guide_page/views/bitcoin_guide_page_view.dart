@@ -119,7 +119,9 @@ class BitcoinGuidePageView extends GetWidget<BitcoinGuidePageController> {
                                   ? Padding(
                                       padding:
                                           EdgeInsets.only(top: MySize.size20!),
-                                      child: getBannerAd(),
+                                      child: (i % 2 == 0)
+                                          ? facebookNativeAd()
+                                          : getBannerAd(),
                                     )
                                   : SizedBox(
                                       height: MySize.size20,

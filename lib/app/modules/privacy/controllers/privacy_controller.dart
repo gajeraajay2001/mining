@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class PrivacyController extends GetxController {
   //TODO: Implement PrivacyController
 
@@ -7,6 +9,7 @@ class PrivacyController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    interstialAd();
   }
 
   @override

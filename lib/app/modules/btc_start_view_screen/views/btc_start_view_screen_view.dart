@@ -62,6 +62,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                           data:
                               "Free BTC wallets are available for all major operating systems and devices to serve a variety of your needs. For example, you can install an app on your mobile device for everyday use or you can have a wallet only for online payments on your computer. In any case, choosing a wallet is easy and can be done in minutes.",
                         ),
+                        facebookNativeAd(),
                         SizedBox(
                           height: MySize.size15,
                         ),
@@ -87,6 +88,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                         SizedBox(
                           height: MySize.size20,
                         ),
+                        nativeBannerAd(),
                         Text(
                           "How to accept BTC",
                           style: TextStyle(
@@ -130,6 +132,7 @@ class BtcStartViewScreenView extends GetWidget<BtcStartViewScreenController> {
                             title: "Accounting and taxes",
                             data:
                                 "Merchants often deposit and display prices in their local currency. In other cases, BTC works similarly to a foreign currency. To get appropriate guidance regarding tax compliance for your own jurisdiction, you should contact a qualified accountant."),
+                        facebookNativeAd(),
                         SizedBox(
                           height: MySize.size15,
                         ),

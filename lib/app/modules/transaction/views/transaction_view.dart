@@ -36,6 +36,7 @@ class TransactionView extends GetWidget<TransactionController> {
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(height: MySize.size10),
+                          nativeBannerAd(),
                           Center(
                             child: Text(
                               "You have a required Minimum 10000 BTC for 10 withdraw",
@@ -54,6 +55,7 @@ class TransactionView extends GetWidget<TransactionController> {
                               borderRadius: MySize.size20,
                               textSize: MySize.size18,
                               width: MySize.getScaledSizeWidth(270)),
+                          facebookNativeAd(),
                         ],
                       ),
                     ),

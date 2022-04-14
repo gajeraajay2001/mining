@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mining/constants/color_constant.dart';
 import 'package:mining/constants/sizeConstant.dart';
 
 TextFormField getTextField({
@@ -6,6 +7,7 @@ TextFormField getTextField({
   TextEditingController? textEditingController,
   Widget? prefixIcon,
   double? borderRadius,
+  FormFieldValidator<String>? validation,
   Widget? suffixIcon,
   double? size = 52,
   Widget? suffix,
@@ -16,6 +18,7 @@ TextFormField getTextField({
     obscureText: textVisible,
     textInputAction: TextInputAction.next,
     keyboardType: TextInputType.name,
+    validator: validation,
     decoration: InputDecoration(
       enabledBorder: OutlineInputBorder(
         borderSide: BorderSide(color: Color(0xffE8E8E8)),
@@ -25,7 +28,7 @@ TextFormField getTextField({
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(
             (borderRadius == null) ? MySize.size10! : borderRadius),
-        borderSide: BorderSide(color: Color(0xffE8E8E8)),
+        borderSide: BorderSide(color: appTheme.primaryTheme),
       ),
       border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(

@@ -15,6 +15,8 @@ abstract class Routes {
   static const WALLET = _Paths.WALLET;
   static const START_SCREEN = _Paths.START_SCREEN;
   static const BTC_FULL_MODE = _Paths.BTC_FULL_MODE;
+  static const LOGIN_SCREEN = _Paths.LOGIN_SCREEN;
+  static const SIGNUP_PAGE = _Paths.SIGNUP_PAGE;
 }
 
 abstract class _Paths {
@@ -31,4 +33,6 @@ abstract class _Paths {
   static const WALLET = '/wallet';
   static const START_SCREEN = '/start-screen';
   static const BTC_FULL_MODE = '/btc-full-mode';
+  static const LOGIN_SCREEN = '/login-screen';
+  static const SIGNUP_PAGE = '/signup-page';
 }

@@ -2,6 +2,8 @@ import 'package:mining/Model/widgetModel.dart';
 import 'package:mining/constants/moduleConstant.dart';
 import 'package:get/get.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class GuideDetailScreenController extends GetxController {
   //TODO: Implement GuideDetailScreenController
   int moduleType = Get.arguments[ArgumentConstant.ModuleType];
@@ -12,6 +14,7 @@ class GuideDetailScreenController extends GetxController {
   void onInit() {
     detailList = getDetailData(moduleType);
     super.onInit();
+    interstialAd();
     print(moduleType.toString());
     print(actionType.toString());
   }

@@ -107,7 +107,8 @@ class ReferPageView extends GetView<ReferPageController> {
                             ),
                           ),
                         ],
-                      )
+                      ),
+                      facebookNativeAd(),
                     ],
                   ),
                 ),

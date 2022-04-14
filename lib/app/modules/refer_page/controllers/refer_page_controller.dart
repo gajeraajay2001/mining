@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../../../../utilities/widget_utils.dart';
+
 class ReferPageController extends GetxController {
   //TODO: Implement ReferPageController
 
@@ -7,6 +9,7 @@ class ReferPageController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+    interstialAd();
   }
 
   @override
